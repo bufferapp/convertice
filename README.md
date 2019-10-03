@@ -5,7 +5,7 @@ This repository contains code and resources for a Trial Conversion Forecasting M
 
 ## Defining the Problem
 
-We define a trial conversion as...
+A **trial conversion** means the user has made a payment within 30 days of the trial start event. We're trying to predict the provability of a trial conversions on users that have been 5 days on a trial.
 
 ### Model Evaluation
 
