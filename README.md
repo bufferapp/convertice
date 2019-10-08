@@ -4,7 +4,7 @@ This repository contains code and resources for a Trial Conversion Forecasting M
 
 ## Defining the Problem
 
-A **trial conversion** means the user has made a payment within 30 days of the trial start event. The payment has to be for a new subscription or a new plan on an existing subscription. We're trying to predict the probability of a trial converting for users that have been on a trial for at least 5 days.b
+A **trial conversion** means the user has made a payment within 30 days of the trial start event. The payment has to be for a new subscription or a new plan on an existing subscription. We're trying to predict the probability of a trial converting for users that have been on a trial for at least 5 days.
 
 ### Model Evaluation
 
