@@ -2,10 +2,9 @@
 
 This repository contains code and resources for a Trial Conversion Forecasting Model. The goal of the model is to accurately predict how likely to convert is an user that finished their trial.
 
-
 ## Defining the Problem
 
-We define a trial conversion as...
+A **trial conversion** means the user has made a payment within 30 days of the trial start event. The payment has to be for a new subscription or a new plan on an existing subscription. We're trying to predict the probability of a trial converting for users that have been on a trial for at least 5 days.
 
 ### Model Evaluation
 
