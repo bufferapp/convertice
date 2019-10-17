@@ -6,9 +6,11 @@ This repository contains code and resources for a Trial Conversion Forecasting M
 
 A **trial conversion** means the user has made a payment within 30 days of the trial start event. The payment has to be for a new subscription or a new plan on an existing subscription. We're trying to predict the probability of a trial converting for users that have been on a trial for at least 5 days.
 
-### Model Evaluation
+### Modeling
 
-To evaluate the model we use the area under the receiver operating characteristic curve (also called [AUC - ROC Curve](https://towardsdatascience.com/understanding-auc-roc-curve-68b2303cc9c5)).
+We've experimented with [different models](/models) to explore the different approaches. To evaluate these models we use the area under the receiver operating characteristic curve (also called [AUC - ROC Curve](https://towardsdatascience.com/understanding-auc-roc-curve-68b2303cc9c5)).
+
+Right now, we're using [Google AutoML Tables](https://cloud.google.com/automl-tables/) to do both training and batch predictions.
 
 ### Inputs and Outputs
 
