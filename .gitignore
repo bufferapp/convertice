@@ -104,3 +104,6 @@ venv.bak/
 .mypy_cache/
 .Rproj.user
 convertice.Rproj
+
+# Google Cloud Credentials
+job/*.json
