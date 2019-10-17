@@ -1,4 +1,4 @@
-IMAGE_NAME := bufferapp/segment-tagger:0.1.0
+IMAGE_NAME := bufferapp/convertice-job:0.1.0
 
 .DEFAULT_GOAL := run
 

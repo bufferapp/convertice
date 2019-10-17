@@ -1,0 +1,5 @@
+analytics-python
+google-cloud-automl
+gcsfs
+pandas
+stacklogging
