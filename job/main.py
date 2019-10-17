@@ -32,7 +32,6 @@ gcs_directory = (
 )
 
 # Load dataframe in memory
-
 logger.info("Reading data from GCS")
 df = pd.read_csv(f"{gcs_directory}/tables_1.csv")
 logger.info(f"Loaded {df.shape[0]} rows")
