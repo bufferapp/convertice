@@ -1,6 +1,6 @@
 # Convertice
 
-This repository contains code and resources for a Trial Conversion Forecasting Model. The goal of the model is to accurately predict how likely to convert is an user that finished their trial.
+This repository contains code and resources for a Trial Conversion Forecasting Model. The goal is to accurately predict how likely an user is to convert after 5 days in a trial.
 
 ## Defining the Problem
 
@@ -12,8 +12,6 @@ To evaluate the model we use the area under the receiver operating characteristi
 
 ### Inputs and Outputs
 
-To train the model we use several features. These are modeled the in `buffer-dbt` project.
+To train the model we use several features. These are modeled the in `buffer-dbt` project. We'll use `dbt` to version the input dataset. The model can read that table and write predictions into another. This way it can be swaped without affecting the rest of the pipeline.
 
-At prediction time we use a view...
-
-The results of the model are saved to another table. We can then use that table to send the predictions to Mixpanel.
+The final goal is to send the probability of converting to Segment as a new event.
