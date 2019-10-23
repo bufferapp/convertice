@@ -17,7 +17,7 @@ automl_client = automl_v1beta1.TablesClient(project="buffer-data", region="us-ce
 logger.info("Running AutoML Batch predict")
 
 operation = automl_client.batch_predict(
-    bigquery_input_uri="bq://buffer-data.dbt_buffer.predict_publish_trial_conversion_holdout",
+    bigquery_input_uri="bq://buffer-data.dbt_buffer.predict_publish_trial_conversion_prediction",
     gcs_output_uri_prefix="gs://automl-predictions/",
     model_display_name=f"{MODEL_NAME}_{MODEL_VERSION}",
 )
