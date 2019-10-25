@@ -4,7 +4,7 @@ IMAGE_NAME := bufferapp/convertice-job:0.1.0
 
 .PHONY: run
 run: build
-	docker run -it --env-file .env --rm $(IMAGE_NAME)
+	docker run -it --env-file .env -v $(PWD):/app --rm $(IMAGE_NAME)
 
 .PHONY: build
 build:
