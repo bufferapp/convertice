@@ -8,7 +8,7 @@ import stacklogging
 logger = stacklogging.getLogger(__name__)
 
 MODEL_NAME = "trial_prediction_model"
-MODEL_VERSION = "v5"
+MODEL_VERSION = "v6"
 
 segment_client = Client(os.getenv("SEGMENT_WRITE_KEY"), max_queue_size=100000)
 automl_client = automl_v1beta1.TablesClient(project="buffer-data", region="us-central1")
