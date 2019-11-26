@@ -13,13 +13,11 @@ spec:
               volumeMounts:
                 - name: gcp-credentials-volume
                   mountPath: /var/secrets/google
-              image: bufferapp/convertice-job:0.2.0
+              image: gcr.io/buffer-data/convertice-job:0.2.0
               env:
                 - name: GOOGLE_APPLICATION_CREDENTIALS
                   value: /var/secrets/google/key.json
               imagePullPolicy: Always
-          imagePullSecrets:
-            - name: dockerhub
           restartPolicy: OnFailure
           volumes:
             - name: gcp-credentials-volume

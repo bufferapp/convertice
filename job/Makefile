@@ -13,3 +13,10 @@ build:
 .PHONY: dev
 dev: build
 	docker run -it --env-file .env --rm -v $(PWD):/app $(IMAGE_NAME) /bin/bash
+
+.PHONY: push
+push: build
+	docker push $(IMAGE_NAME)
+
+deploy: push
+	kubectl apply -f cronjob.yml
