@@ -13,10 +13,15 @@ spec:
               volumeMounts:
                 - name: gcp-credentials-volume
                   mountPath: /var/secrets/google
-              image: gcr.io/buffer-data/convertice-job:0.2.0
+              image: gcr.io/buffer-data/convertice-job:0.2.1
               env:
                 - name: GOOGLE_APPLICATION_CREDENTIALS
                   value: /var/secrets/google/key.json
+                - name: SEGMENT_WRITE_KEY
+                  valueFrom:
+                    secretKeyRef:
+                      name: segment
+                      key: write-key
               imagePullPolicy: Always
           restartPolicy: OnFailure
           volumes:

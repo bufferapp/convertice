@@ -1,4 +1,4 @@
-IMAGE_NAME := gcr.io/buffer-data/convertice-job:0.2.0
+IMAGE_NAME := gcr.io/buffer-data/convertice-job:0.2.1
 
 .DEFAULT_GOAL := run
 
